@@ -1,0 +1,15 @@
+                        //bulit in modules
+const os = require('os')
+// user info
+const user = os.userInfo()
+console.log(user)
+// method return uptime
+console.log(`the system is running ${os.uptime()} in seconds`)
+
+const currentOs = {
+    name: os.type(),
+    release: os.release(),
+    totalMemory: os.totalmem(),
+    freeMemory: os.freemem(),
+}
+console.log(currentOs)
